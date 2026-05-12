@@ -8,13 +8,13 @@ const Footer = () => {
       <div className="section-container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
-          <div className="flex items-center mb-6">
-            <img 
-              src="/logo.svg" 
-              alt="Rah-e-Ravaan Logo" 
-              className="h-12 md:h-16 w-auto object-contain"
-            />
-          </div>
+            <div className="flex items-center mb-6">
+              <img
+                src="/logo.svg"
+                alt="Rah-e-Ravaan Logo"
+                className="h-12 md:h-16 w-auto object-contain"
+              />
+            </div>
             <p className="text-forest/50 leading-relaxed mb-6">
               Revolutionizing tourism in Pakistan through AI-powered conversational intelligence and community-driven transport.
             </p>
@@ -44,8 +44,6 @@ const Footer = () => {
             <ul className="space-y-4 text-forest/50">
               <li><a href="#vision" className="hover:text-desi-red transition-colors">Our Vision</a></li>
               <li><a href="#" className="hover:text-desi-red transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-desi-red transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-desi-red transition-colors">Terms of Service</a></li>
             </ul>
           </div>
 

@@ -30,11 +30,11 @@
   }
 
   .glass-card {
-    @apply bg-white/60 backdrop-blur-md border border-forest/5 rounded-2xl p-6 shadow-sm;
+    @apply bg-white/60 backdrop-blur-md border border-forest/5 rounded-2xl p-4 md:p-6 shadow-sm;
   }
 
   .desi-card {
-    @apply bg-white/80 backdrop-blur-xl border-2 border-desi-saffron/20 rounded-3xl p-8 relative overflow-hidden shadow-xl;
+    @apply bg-white/80 backdrop-blur-xl border-2 border-desi-saffron/20 rounded-3xl p-6 md:p-8 relative overflow-hidden shadow-xl;
   }
 
   .desi-pattern {
@@ -59,7 +59,7 @@
 
 .margin-pattern-left, .margin-pattern-right,
 .margin-pattern-alt-left, .margin-pattern-alt-right {
-  @apply absolute top-0 w-8 md:w-20 h-full z-0 opacity-40 pointer-events-none;
+  @apply absolute top-0 w-4 md:w-20 h-full z-0 opacity-40 pointer-events-none;
   background-size: 100% auto;
   background-repeat: repeat-y;
 }

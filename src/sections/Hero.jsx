@@ -7,14 +7,14 @@ const Hero = () => {
   const { trackEvent } = useAnalytics();
 
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-desi-parchment">
-      <div className="margin-pattern-left"></div>
+    <section className="relative min-h-[80vh] flex items-center pt-28 pb-12 md:pt-32 md:pb-20 overflow-hidden bg-desi-parchment">
+      <div className="margin-pattern-left hidden sm:block"></div>
       {/* Background Decorative Print */}
       <div className="desi-pattern opacity-[0.05]"></div>
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white/50 -skew-x-12 translate-x-1/2 z-0"></div>
 
       <div className="section-container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column: Spacious Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -26,7 +26,7 @@ const Hero = () => {
               <span>GO-TO ITINERARY PLANNER</span>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-heading font-extrabold text-forest leading-[1.1] mb-8">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-heading font-extrabold text-forest leading-[1.1] mb-8">
               Discover <br />
               <span className="text-gradient-desi">& Explore Pakistan</span>
             </h1>
@@ -71,7 +71,7 @@ const Hero = () => {
               <img
                 src="https://i.pinimg.com/736x/09/bb/47/09bb475aa32fe56fcc2d79052383d7f0.jpg"
                 alt="Northern Pakistan Landscape"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[300px] md:h-[500px] object-cover"
               />
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -left-6 bg-desi-saffron text-white p-6 rounded-sm shadow-xl rotate-[-5deg] font-decorative">

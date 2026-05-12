@@ -4,10 +4,10 @@ import { Heart, Globe, Shield } from 'lucide-react';
 
 const Vision = () => {
   return (
-    <section id="vision" className="py-24 bg-white relative overflow-hidden">
+    <section id="vision" className="py-16 md:py-24 bg-white relative overflow-hidden">
       <div className="desi-pattern"></div>
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}

@@ -79,7 +79,7 @@ const Waitlist = () => {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-white border border-forest/10 rounded-full px-8 py-4 text-forest focus:outline-none focus:border-desi-red/50 transition-colors text-lg"
+                  className="flex-1 bg-white border border-forest/10 rounded-full px-6 md:px-8 py-3 md:py-4 text-forest focus:outline-none focus:border-desi-red/50 transition-colors text-base md:text-lg"
                 />
                 <button
                   type="submit"

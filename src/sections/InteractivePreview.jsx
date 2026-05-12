@@ -4,7 +4,7 @@ import { Send, Sparkles, MapPin } from 'lucide-react';
 
 const InteractivePreview = () => {
   return (
-    <section id="preview" className="py-24 bg-white relative overflow-hidden">
+    <section id="preview" className="py-16 md:py-24 bg-white relative overflow-hidden">
       <div className="desi-pattern opacity-[0.05]"></div>
       <div className="section-container relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -61,7 +61,7 @@ const InteractivePreview = () => {
 
             {/* Input Area */}
             <div className="mt-8 pt-8 border-t border-forest/5 flex space-x-4">
-              <div className="flex-1 bg-desi-parchment rounded-full px-8 py-4 border border-forest/10 text-forest/40 italic">
+              <div className="flex-1 bg-desi-parchment rounded-full px-4 sm:px-8 py-3 sm:py-4 border border-forest/10 text-forest/40 italic text-sm sm:text-base">
                 Ask about the Karakoram Highway...
               </div>
               <button className="w-14 h-14 rounded-full bg-desi-red text-white flex items-center justify-center shadow-lg shadow-desi-red/20 hover:scale-105 transition-all">

@@ -31,8 +31,8 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-24 bg-desi-parchment relative overflow-hidden">
-      <div className="margin-pattern-right"></div>
+    <section id="features" className="py-16 md:py-24 bg-desi-parchment relative overflow-hidden">
+      <div className="margin-pattern-right hidden sm:block"></div>
       <div className="desi-pattern opacity-[0.04]"></div>
       <div className="section-container relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">

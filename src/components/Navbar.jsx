@@ -46,7 +46,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white p-2">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-forest p-2">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-forest-dark border-b border-white/10"
+            className="md:hidden bg-desi-parchment border-b border-forest/10"
           >
             <div className="px-4 pt-2 pb-6 space-y-2">
               {navLinks.map((link) => (
@@ -67,7 +67,7 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-4 text-lg text-white/80 hover:text-sky transition-colors border-b border-white/5"
+                  className="block px-3 py-4 text-lg text-forest/80 hover:text-desi-red transition-colors border-b border-forest/5"
                 >
                   {link.name}
                 </a>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <a
                   href="#waitlist"
                   onClick={() => setIsOpen(false)}
-                  className="btn-primary w-full text-center block"
+                  className="btn-primary w-full text-center block bg-desi-red text-white"
                 >
                   Join Waitlist
                 </a>

@@ -45,19 +45,7 @@ const Features = () => {
               We've built a comprehensive ecosystem for navigating the complex terrains and rich cultures of Northern Pakistan.
             </p>
           </div>
-          <div className="pb-2">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-desi-saffron/20 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-forest/20 to-transparent"></div>
-                </div>
-              ))}
-              <div className="w-10 h-10 rounded-full border-2 border-white bg-desi-red flex items-center justify-center text-[10px] font-bold text-white">
-                +2k
-              </div>
-            </div>
-            <p className="text-xs text-forest/40 mt-2 font-medium">Waitlist growing fast</p>
-          </div>
+          <div className="pb-2"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

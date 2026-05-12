@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Features', href: '#features' },
-    { name: 'Experience', href: '#features' },
+    { name: 'Experience', href: '#preview' },
   ];
 
   return (

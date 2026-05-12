@@ -1,26 +1,31 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Loader2, Sparkles } from 'lucide-react';
+import { addToWaitlist } from '../lib/firebase';
 import { useAnalytics } from '../hooks/useAnalytics';
 
 const Waitlist = () => {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('idle'); // idle, loading, success
+  const [status, setStatus] = useState('idle'); // idle, loading, success, error
   const { trackEvent } = useAnalytics();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email) return;
 
     setStatus('loading');
     trackEvent('waitlist_submission_start', { email_domain: email.split('@')[1] });
 
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      await addToWaitlist(email);
       setStatus('success');
       trackEvent('waitlist_submission_success', { email_domain: email.split('@')[1] });
       setEmail('');
-    }, 1500);
+    } catch (error) {
+      console.error("Firebase Error:", error);
+      setStatus('error');
+      alert("Something went wrong. Please try again later.");
+    }
   };
 
   return (

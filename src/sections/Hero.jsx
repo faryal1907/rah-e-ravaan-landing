@@ -37,14 +37,6 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
               <a
-                href="#waitlist"
-                onClick={() => trackEvent('cta_click', { label: 'Join Waitlist Hero' })}
-                className="btn-primary bg-desi-red hover:bg-desi-maroon flex items-center justify-center space-x-2 text-lg px-10 py-4 shadow-desi-red/20"
-              >
-                <span>Join the Journey</span>
-                <ChevronRight size={20} />
-              </a>
-              <a
                 href="#vision"
                 onClick={() => trackEvent('cta_click', { label: 'Explore Vision' })}
                 className="flex items-center justify-center space-x-4 text-forest hover:text-desi-red transition-all font-bold group"

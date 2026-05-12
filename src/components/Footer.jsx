@@ -19,13 +19,20 @@ const Footer = () => {
               Revolutionizing tourism in Pakistan through AI-powered conversational intelligence and community-driven transport.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-forest/5 flex items-center justify-center hover:bg-desi-red/20 transition-colors text-forest/70 hover:text-desi-red">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-forest/5 flex items-center justify-center hover:bg-desi-red/20 transition-colors text-forest/70 hover:text-desi-red">
+              <a 
+                href="https://www.instagram.com/rah_e_ravaan/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-forest/5 flex items-center justify-center hover:bg-desi-red/20 transition-colors text-forest/70 hover:text-desi-red"
+              >
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-forest/5 flex items-center justify-center hover:bg-desi-red/20 transition-colors text-forest/70 hover:text-desi-red">
+              <a 
+                href="https://www.linkedin.com/in/devhammad/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3Bfg3cEFfQTKa0gPh1abLQlw%3D%3D" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-forest/5 flex items-center justify-center hover:bg-desi-red/20 transition-colors text-forest/70 hover:text-desi-red"
+              >
                 <Linkedin size={18} />
               </a>
             </div>
@@ -50,13 +57,14 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 text-forest">Contact</h4>
             <ul className="space-y-4 text-forest/50">
+
               <li className="flex items-center space-x-3">
-                <Mail size={16} className="text-desi-red" />
-                <span>hello@raheravaan.com</span>
+                <Phone size={16} className="text-desi-red" />
+                <span>+92 327 6898500</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={16} className="text-desi-red" />
-                <span>+92 300 1234567</span>
+                <span>+92 318 8868811</span>
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin size={16} className="text-desi-red" />

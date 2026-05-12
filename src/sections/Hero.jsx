@@ -69,7 +69,7 @@ const Hero = () => {
           >
             <div className="ornate-frame">
               <img
-                src="/src/assets/hero_bg.png"
+                src="https://i.pinimg.com/736x/09/bb/47/09bb475aa32fe56fcc2d79052383d7f0.jpg"
                 alt="Northern Pakistan Landscape"
                 className="w-full h-[500px] object-cover"
               />
